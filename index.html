@@ -1,5 +1,4 @@
 <meta charset="UTF-8">
-<link rel="icon" type="image/x-icon" href="favicon.ico">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Lorenzo Maniscalco — Mathematician</title>
 <meta name="description" content="Lorenzo Maniscalco, PhD candidate in Mathematics at Università degli Studi di Torino. Research in geometric analysis, elliptic PDEs, spacelike hypersurfaces in Lorentzian manifolds, prescribed mean curvature.">
@@ -7,6 +6,9 @@
 <meta property="og:title" content="Lorenzo Maniscalco — Mathematician">
 <meta property="og:description" content="PhD candidate at UniTO. Geometric analysis, elliptic PDEs, Lorentzian geometry.">
 <meta property="og:type" content="website">
+<link rel="shortcut icon" href="favicon.ico">
+<link rel="icon" type="image/x-icon" href="favicon.ico">
+<link rel="icon" type="image/png" href="favicon.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,600;1,400&family=JetBrains+Mono:wght@400;500&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
 
@@ -16,7 +18,7 @@
   --bg:#0c0b09;--bg2:#141210;--bg3:#1c1a16;
   --amber:#c8890a;--amber2:#dfa830;
   --text:#ddd4be;--muted:#7a7060;--border:#252018;
-  --mono:'JetBrains Mono',monospace;slided
+  --mono:'JetBrains Mono',monospace;
   --serif:'EB Garamond',Georgia,serif;
   --sans:'Inter',system-ui,sans-serif;
 }
@@ -56,19 +58,13 @@ section+section{border-top:1px solid var(--border)}
 .open-text{font-size:.82rem;color:var(--muted)}.open-text strong{color:var(--text)}
 
 /* PHOTO */
-#photo-input{display:none}
-.avatar-wrap{flex-shrink:0;cursor:pointer;display:flex;flex-direction:column;align-items:center;gap:.5rem}
-.avatar-wrap:hover .av-placeholder{background:var(--bg2);border-color:var(--amber2)}
-.av-placeholder{width:200px;height:240px;border-radius:8px;border:2px dashed rgba(200,137,10,.5);background:var(--bg3);display:flex;flex-direction:column;align-items:center;justify-content:center;gap:.6rem;transition:all .2s}
-.av-initials{font-family:var(--serif);font-size:2.2rem;color:var(--amber)}
-.av-label{font-size:.65rem;font-family:var(--mono);color:var(--muted);letter-spacing:.06em}
-#av-img{width:200px;height:240px;border-radius:8px;border:2px solid var(--amber);object-fit:cover;display:none;filter:sepia(.5) saturate(1.5) hue-rotate(-8deg) brightness(.92)}
-.av-hint{font-size:.63rem;font-family:var(--mono);color:var(--muted);letter-spacing:.05em}
+.avatar-wrap{flex-shrink:0}
+#av-img{width:200px;height:240px;border-radius:8px;border:2px solid var(--amber);object-fit:cover;display:block;filter:sepia(.5) saturate(1.5) hue-rotate(-8deg) brightness(.92)}
 
 @media(max-width:620px){
   .nav-links{display:none}
   .hero-inner{flex-direction:column}
-  .av-placeholder,#av-img{width:140px;height:170px}
+  #av-img{width:140px;height:170px}
 }
 
 /* RESEARCH */
@@ -134,9 +130,7 @@ footer{padding:1.8rem 2rem;text-align:center;font-size:.68rem;color:var(--muted)
 
 <section id="hero">
 <div class="wrap">
-  <input type="file" id="photo-input" accept="image/*">
   <div class="hero-inner">
-
     <div class="hero-text">
       <div class="eyebrow">PhD Candidate · Mathematics</div>
       <h1 class="hero-name">Lorenzo<br>Maniscalco</h1>
@@ -158,11 +152,9 @@ footer{padding:1.8rem 2rem;text-align:center;font-size:.68rem;color:var(--muted)
         <div class="open-text"><strong>Open to postdoctoral positions</strong> in geometric analysis, Europe — 2026/27</div>
       </div>
     </div>
-
     <div class="avatar-wrap">
-      <img id="av-img" src="foto.jpg" alt="Lorenzo Maniscalco" style="display:block">
+      <img id="av-img" src="foto.jpg" alt="Lorenzo Maniscalco">
     </div>
-
   </div>
 </div>
 </section>
@@ -207,10 +199,10 @@ footer{padding:1.8rem 2rem;text-align:center;font-size:.68rem;color:var(--muted)
 <div class="wrap">
   <div class="lbl">03 · Talks</div>
   <h2 class="sec-h">Talks &amp; Seminars</h2>
-  <div class="talk"><div class="t-date">Apr 27, 2026</div><div><div class="t-title">Where electrodynamics meets Lorentzian geometry: the Born–Infeld equation</div><div class="t-venue">Insalate di Matematica · Università Milano Bicocca, Milan</div><a href="https://lorenzomaniscalco98.github.io/Bicocca_short" target="_blank" class="sl-btn sl-of">📄 Slides</a></div></div>
-  <div class="talk"><div class="t-date">Jan 20, 2026</div><div><div class="t-title">Born–Infeld electrodynamics and spacelike hypersurfaces with singular mean curvature</div><div class="t-venue">PDEs at Grand Paradis · Cogne, Italy</div><a href="https://lorenzomaniscalco98.github.io/cogne_short" target="_blank" class="sl-btn sl-off">📄 Slides</a></div></div>
-  <div class="talk"><div class="t-date">Dec 1, 2025</div><div><div class="t-title">On the mean curvature of spacelike hypersurfaces asymptotic to a light cone</div><div class="t-venue">Séminaire de clôture "PDEs in interactions" · Université Libre de Bruxelles, Spa</div><a href="https://lorenzomaniscalco98.github.io/Spa_short" target="_blank" class="sl-btn sl-off">📄 Slides</a></div></div>
-  <div class="talk"><div class="t-date">Apr 16, 2025</div><div><div class="t-title">Prescribing mean curvature in Lorentzian geometry</div><div class="t-venue">PhD Days · Università di Milano</div><a href="#" target="_blank" class="sl-btn sl-off">📄 Slides</a></div></div>
+  <div class="talk"><div class="t-date">Apr 27, 2026</div><div><div class="t-title">Where electrodynamics meets Lorentzian geometry: the Born–Infeld equation</div><div class="t-venue">Insalate di Matematica · Università Milano Bicocca, Milan</div><a href="https://lorenzomaniscalco98.github.io/Bicocca_short.pdf" target="_blank" class="sl-btn sl-on">📄 Slides</a></div></div>
+  <div class="talk"><div class="t-date">Jan 20, 2026</div><div><div class="t-title">Born–Infeld electrodynamics and spacelike hypersurfaces with singular mean curvature</div><div class="t-venue">PDEs at Grand Paradis · Cogne, Italy</div><a href="https://lorenzomaniscalco98.github.io/cogne_short.pdf" target="_blank" class="sl-btn sl-on">📄 Slides</a></div></div>
+  <div class="talk"><div class="t-date">Dec 1, 2025</div><div><div class="t-title">On the mean curvature of spacelike hypersurfaces asymptotic to a light cone</div><div class="t-venue">Séminaire de clôture "PDEs in interactions" · Université Libre de Bruxelles, Spa</div><a href="https://lorenzomaniscalco98.github.io/Spa_short.pdf" target="_blank" class="sl-btn sl-on">📄 Slides</a></div></div>
+  <div class="talk"><div class="t-date">Apr 16, 2025</div><div><div class="t-title">Prescribing mean curvature in Lorentzian geometry</div><div class="t-venue">PhD Days · Università di Milano</div></div></div>
   <div class="talk"><div class="t-date">Feb 26, 2025</div><div><div class="t-title">Spacelike hypersurfaces with singular mean curvature</div><div class="t-venue">Seminario MAP · Scuola Normale Superiore, Pisa</div></div></div>
   <div class="talk"><div class="t-date">Feb 19, 2025</div><div><div class="t-title">Lorentzian geometry and non-linear electrodynamics</div><div class="t-venue">Seminario del Dottorato · Università di Torino</div></div></div>
 </div>
@@ -247,7 +239,7 @@ footer{padding:1.8rem 2rem;text-align:center;font-size:.68rem;color:var(--muted)
       <div class="c-line">✉&nbsp;<a href="mailto:lorenzo.maniscalco@unito.it">lorenzo.maniscalco@unito.it</a></div>
       <div class="c-line">🏛&nbsp;Dipartimento di Matematica<br>Università degli Studi di Torino</div>
       <div class="c-line">📄&nbsp;<a href="#">CV (PDF)</a></div>
-      <div class="c-line">🔗&nbsp;<a href="#">arXiv profile</a></div>
+      <div class="c-line">🔗&nbsp;<a href="https://arxiv.org/a/maniscalco_l_1.html" target="_blank">arXiv profile</a></div>
     </div>
     <div>
       <p style="font-size:.78rem;color:var(--muted);margin-bottom:1rem;font-family:var(--mono);letter-spacing:.03em">REFERENCES</p>
@@ -263,19 +255,6 @@ footer{padding:1.8rem 2rem;text-align:center;font-size:.68rem;color:var(--muted)
 <footer>Lorenzo Maniscalco · Università degli Studi di Torino · 2026</footer>
 
 <script>
-document.getElementById('photo-input').addEventListener('change', e => {
-  const f = e.target.files[0];
-  if (!f) return;
-  const r = new FileReader();
-  r.onload = ev => {
-    const img = document.getElementById('av-img');
-    img.src = ev.target.result;
-    img.style.display = 'block';
-    document.getElementById('av-placeholder').style.display = 'none';
-  };
-  r.readAsDataURL(f);
-});
-
 const secs = document.querySelectorAll('section[id]');
 const links = document.querySelectorAll('.nav-links a');
 window.addEventListener('scroll', () => {
